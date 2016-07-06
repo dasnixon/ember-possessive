@@ -1,6 +1,6 @@
 {
   "name": "ember-possessive",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Ember helper that lets you get a possessive form of a string for use in templates.",
   "directories": {
     "doc": "doc",
