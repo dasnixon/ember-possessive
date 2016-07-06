@@ -1,6 +1,14 @@
 # Ember-possessive
 
-This README outlines the details of collaborating on this Ember addon.
+A simple Ember helper that lets you get a possessive form of a string for use in templates.
+
+Courtesy of [ruby possessive gem](https://github.com/bclubb/possessive).
+
+## How to use
+
+```javascript
+{{possessive 'Chris'}}
+```
 
 ## Installation
 
