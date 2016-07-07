@@ -10,6 +10,17 @@ Courtesy of [ruby possessive gem](https://github.com/bclubb/possessive).
 {{possessive 'Chris'}}
 ```
 
+## Re-usability
+
+You can re-use the function used to make a string possessive by importing
+the function a la:
+
+```javascript
+import possessive from 'ember-possessive/utils/possessive';
+```
+
+Enjoy!
+
 ## Installation
 
 * `git clone` this repository

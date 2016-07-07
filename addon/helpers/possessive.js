@@ -1,15 +1,11 @@
 import Ember from 'ember';
+import possessiveFunc from 'ember-possessive/utils/possessive';
 
-const APOSTROPHE_CHAR = '’';
-const { isBlank, isEqual } = Ember;
+const { Helper } = Ember;
+const { helper } = Helper;
 
 export function possessive([ string ]/*, hash*/) {
-  if (isBlank(string)) {
-    return string;
-  }
-  let lastChar = string.slice(-1);
-  let endOfWord = isEqual(lastChar, 's') ? APOSTROPHE_CHAR : `${APOSTROPHE_CHAR}s`;
-  return `${string}${endOfWord}`;
+  return possessiveFunc(string);
 }
 
-export default Ember.Helper.helper(possessive);
+export default helper(possessive);
